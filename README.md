@@ -1,5 +1,5 @@
 DCell::Hazelcast
-================
+----------------
 
 This provides a [Hazelast](http://www.hazelcast.com/) registry for
 [DCell](https://github.com/celluloid/dcell).
@@ -44,12 +44,12 @@ There is an executable example in `examples/dcell-hazelcast.rb`.
 License
 -------
 
-## Hazelcast
+### Hazelcast
 
 Hazelcast is released under [Apache License](http://www.apache.org/licenses/LICENSE-2.0)
 and the project is hosted at [Google Code](http://code.google.com/p/hazelcast).
 It can be freely used in commercial or non-commercial applications.
 
-## DCell::Hazelcast
+### DCell::Hazelcast
 
 Copyright (c) 2012 Bernd Ahlers. See LICENSE.txt for further details.
