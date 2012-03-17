@@ -2,8 +2,12 @@ require 'dcell'
 require 'dcell/registries/hazelcast_adapter'
 require 'optparse'
 
+# The DCell node_id
 name = nil
+
+# The local port for the 0MZ communication.
 port = nil
+
 registry = {:adapter => 'hazelcast'}
 
 OptionParser.new.tap { |options|
