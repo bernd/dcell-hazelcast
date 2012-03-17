@@ -5,7 +5,8 @@ This provides a [Hazelast](http://www.hazelcast.com/) registry for
 [DCell](https://github.com/celluloid/dcell).
 
 The Hazelcast adapter allows DCell to operate without a central registry like
-Redis or Zookeeper.
+Redis or Zookeeper. It is using Hazelcast's distributed map data structure to
+implement the node registry and the global registry for DCell.
 
 CAVEAT
 ------
