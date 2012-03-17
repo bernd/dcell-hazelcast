@@ -1,4 +1,5 @@
-# DCell::Hazelcast
+DCell::Hazelcast
+================
 
 This provides a [Hazelast](http://www.hazelcast.com/) registry for
 [DCell](https://github.com/celluloid/dcell).
@@ -6,21 +7,25 @@ This provides a [Hazelast](http://www.hazelcast.com/) registry for
 The Hazelcast adapter allows DCell to operate without a central registry like
 Redis or Zookeeper.
 
-# CAVEAT
+CAVEAT
+------
 
 This is currently a quick hack which has not seen intensive tests and does not
 provide any configuration options for Hazelcast yet.
 
-# Supported Platforms
+Supported Platforms
+-------------------
 
 Since Hazelcast is a Java library, only JRuby 1.7 or JRuby 1.6 in 1.9 mode are
 supported.
 
-# Prerequisites
+Prerequisites
+-------------
 
 Please follow the [instructions for DCell](https://github.com/celluloid/dcell).
 
-# Usage
+Usage
+-----
 
 ```ruby
 require 'dcell'
@@ -36,7 +41,8 @@ There is an executable example in `examples/dcell-hazelcast.rb`.
     $ jruby --1.9 -Ilib examples/dcell-hazelcast.rb -n master -p 7777
     $ jruby --1.9 -Ilib examples/dcell-hazelcast.rb -n node0 -p 7778
 
-# License
+License
+-------
 
 ## Hazelcast
 
