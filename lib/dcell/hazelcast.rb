@@ -17,7 +17,9 @@ module DCell
       Hazelcast.shutdown_all
     end
 
-    def initialize
+    def initialize(options = {})
+      @env = options[:env] || 'production'
+
       # Disable default logging to avoid messages to STDOUT.
       System.set_property('hazelcast.logging.type', 'none')
 
@@ -31,7 +33,7 @@ module DCell
 
       # Set hazelcast group name to avoid hazelcast instances joining other
       # existing groups.
-      cfg.get_group_config.set_name('hz-dcell')
+      cfg.get_group_config.set_name("hz-dcell-#{@env}")
 
       @hazelcast = Hazelcast.new_hazelcast_instance(cfg)
       @hazelcast.get_logging_service.add_log_listener(Level::INFO, LogListener.new)
