@@ -21,6 +21,20 @@ JRuby (>= 1.7)
 
 Please follow the [instructions for DCell](https://github.com/celluloid/dcell).
 
+## Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'dcell-hazelcast'
+
+And then execute:
+
+    $ bundle install
+
+Or install it yourself as:
+
+    $ gem install dcell-hazelcast
+
 ## Usage
 
 ```ruby
