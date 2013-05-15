@@ -1,7 +1,3 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'dcell'
-
-group :development do
-  gem 'rspec'
-end
+gemspec
