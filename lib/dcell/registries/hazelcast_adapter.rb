@@ -14,6 +14,7 @@ module DCell
       end
 
       def clear_globals
+        @global_registry.clear
       end
 
       class NodeRegistry
