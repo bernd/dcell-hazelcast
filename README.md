@@ -1,7 +1,7 @@
 DCell::Hazelcast
 ----------------
 
-This provides a [Hazelast](http://www.hazelcast.com/) registry for
+This provides a [Hazelcast](http://www.hazelcast.com/) registry for
 [DCell](https://github.com/celluloid/dcell).
 
 The Hazelcast adapter allows DCell to operate without a central registry like
