@@ -5,10 +5,10 @@ require 'optparse'
 # The DCell node_id
 name = nil
 
-# The local port for the 0MZ communication.
+# The local port for the 0MQ communication.
 port = nil
 
-registry = {:adapter => 'hazelcast'}
+registry = {:adapter => 'hazelcast', :env => 'test'}
 
 OptionParser.new.tap { |options|
   options.on('-n NAME', 'Node name') do |value|
