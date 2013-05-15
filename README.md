@@ -17,8 +17,7 @@ provide any configuration options for Hazelcast yet.
 Supported Platforms
 -------------------
 
-Since Hazelcast is a Java library, only JRuby 1.7 or JRuby 1.6 in 1.9 mode are
-supported.
+JRuby (>= 1.7)
 
 Prerequisites
 -------------
@@ -39,8 +38,8 @@ Please see the DCell documentation for further details.
 
 There is an executable example in `examples/dcell-hazelcast.rb`.
 
-    $ jruby --1.9 -Ilib examples/dcell-hazelcast.rb -n master -p 7777
-    $ jruby --1.9 -Ilib examples/dcell-hazelcast.rb -n node0 -p 7778
+    $ jruby -Ilib examples/dcell-hazelcast.rb -n master -p 7777
+    $ jruby -Ilib examples/dcell-hazelcast.rb -n node0 -p 7778
 
 License
 -------
@@ -48,7 +47,7 @@ License
 ### Hazelcast
 
 Hazelcast is released under [Apache License](http://www.apache.org/licenses/LICENSE-2.0)
-and the project is hosted at [Google Code](http://code.google.com/p/hazelcast).
+and the project is hosted at [GitHub](https://github.com/hazelcast).
 It can be freely used in commercial or non-commercial applications.
 
 ### DCell::Hazelcast
