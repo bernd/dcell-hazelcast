@@ -4,7 +4,12 @@ module DCell
   module Registry
     class HazelcastAdapter
       def initialize(options = {})
-        @hazelcast = Hazelcast.new
+        # Convert all options to symbols :/
+        options = options.inject({}) { |h,(k,v)| h[k.to_sym] = v; h }
+
+        @env = options[:env] || 'production'
+
+        @hazelcast = Hazelcast.new(:env => @env)
         @node_registry = NodeRegistry.new(@hazelcast)
         @global_registry = GlobalRegistry.new(@hazelcast)
       end
